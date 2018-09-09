@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// loaders
+import {
+  Audio
+} from './Loaders';
+
 class App extends Component {
   render() {
     return (
@@ -9,7 +14,10 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <ul>{ [...new Array(12)].map(e => <li>loader</li>) }</ul>
+        <ul>
+        <li><Audio /></li>
+        { [...new Array(11)].map(e => <li>loader</li>) }
+        </ul>
       </div>
     );
   }
