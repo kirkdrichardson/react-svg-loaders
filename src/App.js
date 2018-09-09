@@ -5,7 +5,8 @@ import './App.css';
 // loaders
 import {
   Audio,
-  BallTriangle
+  BallTriangle,
+  Bars
 } from './Loaders';
 
 class App extends Component {
@@ -19,7 +20,8 @@ class App extends Component {
         <ul>
         <li><Audio /></li>
         <li><BallTriangle /></li>
-        { [...new Array(10)].map(e => <li>loader</li>) }
+        <li><Bars /></li>
+        { [...new Array(9)].map(e => <li>loader</li>) }
         </ul>
       </div>
     );
