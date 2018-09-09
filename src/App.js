@@ -11,7 +11,11 @@ import {
   Grid,
   Hearts,
   Oval,
-  Puff
+  Puff,
+  Rings,
+  SpinningCircles,
+  TailSpin,
+  ThreeDots
 } from './Loaders';
 
 class App extends Component {
@@ -21,18 +25,23 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <h1>React SVG Loaders</h1>
-        <ul>
-        <li><Audio /></li>
-        <li><BallTriangle /></li>
-        <li><Bars /></li>
-        <li><Circles /></li>
-        <li><Grid /></li>
-        <li><Hearts /></li>
-        <li><Oval /></li>
-        <li><Puff /></li>
-        { [...new Array(4)].map(e => <li>loader</li>) }
-        </ul>
+        <main>
+          <h1>React SVG Loaders</h1>
+          <ul>
+          <li><Audio /></li>
+          <li><BallTriangle /></li>
+          <li><Bars /></li>
+          <li><Circles /></li>
+          <li><Grid /></li>
+          <li><Hearts /></li>
+          <li><Oval /></li>
+          <li><Puff /></li>
+          <li><Rings /></li>
+          <li><SpinningCircles /></li>
+          <li><TailSpin /></li>
+          <li><ThreeDots /></li>
+          </ul>
+        </main>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Audio = ({ width = 55, height = 80, fill = '#fff'}) => (
-  <svg width={width} height={height} viewBox="0 0 55 80" xmlns="http://www.w3.org/2000/svg" fill={fill}>
+export const Audio = ({ width = 45, fill = '#fff'}) => (
+  <svg width={width} height={1.6 * width} viewBox="0 0 55 80" xmlns="http://www.w3.org/2000/svg" fill={fill}>
       <g transform="matrix(1 0 0 -1 0 80)">
           <rect width="10" height="20" rx="3">
               <animate attributeName="height"
@@ -31,10 +31,10 @@ export const Audio = ({ width = 55, height = 80, fill = '#fff'}) => (
   </svg>
 );
 
-export const BallTriangle = ({ width = 57, height = 57, fill = '#fff'}) => (
-  <svg width={width} height={height} viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke={fill}>
-      <g fill="none" fill-rule="evenodd">
-          <g transform="translate(1 1)" stroke-width="2">
+export const BallTriangle = ({ width = 57, fill = '#fff'}) => (
+  <svg width={width} height={width} viewBox="0 0 57 57" xmlns="http://www.w3.org/2000/svg" stroke={fill}>
+      <g fill="none" fillRule="evenodd">
+          <g transform="translate(1 1)" strokeWidth="2">
               <circle cx="5" cy="50" r="5">
                   <animate attributeName="cy"
                        begin="0s" dur="2.2s"
@@ -79,8 +79,8 @@ export const BallTriangle = ({ width = 57, height = 57, fill = '#fff'}) => (
   </svg>
 );
 
-export const Bars = ({ width = 135, height = 140, fill = '#fff' }) => (
-  <svg width={width} height={height} viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill={fill}>
+export const Bars = ({ width = 70, fill = '#fff' }) => (
+  <svg width={width} height={1.04 * width} viewBox="0 0 135 140" xmlns="http://www.w3.org/2000/svg" fill={fill}>
       <rect y="10" width="15" height="120" rx="6">
           <animate attributeName="height"
                begin="0.5s" dur="1s"
@@ -135,8 +135,8 @@ export const Bars = ({ width = 135, height = 140, fill = '#fff' }) => (
 );
 
 
-export const Circles = ({ width = 135, height = 135, fill = '#fff' }) => (
-  <svg width={135} height={135} viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg" fill={fill}>
+export const Circles = ({ width = 60, fill = '#fff' }) => (
+  <svg width={135} height={width} viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg" fill={fill}>
       <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
           <animateTransform
               attributeName="transform"
@@ -158,9 +158,8 @@ export const Circles = ({ width = 135, height = 135, fill = '#fff' }) => (
   </svg>
 );
 
-
-export const Grid = ({ width = 105, height = 105, fill = '#fff' }) => (
-  <svg width={105} height={105} viewBox="0 0 105 105" xmlns="http://www.w3.org/2000/svg" fill={fill}>
+export const Grid = ({ width = 50, fill = '#fff' }) => (
+  <svg width={105} height={width} viewBox="0 0 105 105" xmlns="http://www.w3.org/2000/svg" fill={fill}>
       <circle cx="12.5" cy="12.5" r="12.5">
           <animate attributeName="fill-opacity"
            begin="0s" dur="1s"
@@ -218,8 +217,8 @@ export const Grid = ({ width = 105, height = 105, fill = '#fff' }) => (
   </svg>
 );
 
-export const Hearts = ({ width = 140, height = 64, fill = '#fff', props }) => (
-  <svg width={width} height={height} fill={fill} viewBox="0 0 140 64" xmlns="http://www.w3.org/2000/svg">
+export const Hearts = ({ width = 100, fill = '#fff', props }) => (
+  <svg width={width} height={width * 2.19} fill={fill} viewBox="0 0 140 64" xmlns="http://www.w3.org/2000/svg">
       <path d="M30.262 57.02L7.195 40.723c-5.84-3.976-7.56-12.06-3.842-18.063 3.715-6 11.467-7.65 17.306-3.68l4.52 3.76 2.6-5.274c3.717-6.002 11.47-7.65 17.305-3.68 5.84 3.97 7.56 12.054 3.842 18.062L34.49 56.118c-.897 1.512-2.793 1.915-4.228.9z" fill-opacity=".5">
           <animate attributeName="fill-opacity"
                begin="0s" dur="1.4s"
@@ -238,11 +237,10 @@ export const Hearts = ({ width = 140, height = 64, fill = '#fff', props }) => (
   </svg>
 );
 
-// FIXME
-export const Oval = ({ width = 68, height = 68, fill = '#fff' }) => (
-  <svg width={width} height={height} stroke={fill} viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" fill-rule="evenodd">
-          <g transform="translate(1 1)" stroke-width="2">
+export const Oval = ({ width = 60, fill = '#fff' }) => (
+  <svg width={width} height={width} stroke={fill} viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fillRule="evenodd">
+          <g transform="translate(1 1)" strokeWidth="2">
               <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
               <path d="M36 18c0-9.94-8.06-18-18-18">
                   <animateTransform
@@ -258,9 +256,9 @@ export const Oval = ({ width = 68, height = 68, fill = '#fff' }) => (
   </svg>
 );
 
-export const Puff = ({ width = 84, height = 84, fill = '#fff' }) => (
-  <svg width={width} height={height} stroke={fill} viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-      <g fill="none" fill-rule="evenodd" stroke-width="2">
+export const Puff = ({ width = 75, fill = '#fff' }) => (
+  <svg width={width} height={width} stroke={fill} viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fillRule="evenodd" strokeWidth="2">
           <circle cx="22" cy="22" r="1">
               <animate attributeName="r"
                   begin="0s" dur="1.8s"
@@ -294,5 +292,175 @@ export const Puff = ({ width = 84, height = 84, fill = '#fff' }) => (
                   repeatCount="indefinite" />
           </circle>
       </g>
+  </svg>
+);
+
+export const Rings = ({ width = 95, fill = '#fff' }) => (
+  <svg width={width} height={width} stroke={fill} viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fillRule="evenodd" transform="translate(1 1)" strokeWidth="2">
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="1.5s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="1.5s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="strokeWidth"
+                   begin="1.5s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="3s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="3s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="strokeWidth"
+                   begin="3s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="8">
+              <animate attributeName="r"
+                   begin="0s" dur="1.5s"
+                   values="6;1;2;3;4;5;6"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+      </g>
+  </svg>
+);
+
+export const SpinningCircles = ({ width = 58, fill = '#fff'}) => (
+  <svg width={width} height={width} viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fillRule="evenodd">
+          <g transform="translate(2 1)" stroke={fill} strokeWidth="1.5">
+              <circle cx="42.601" cy="11.462" r="5" fill-opacity="1" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="1;0;0;0;0;0;0;0" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+              <circle cx="49.063" cy="27.063" r="5" fill-opacity="0" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="0;1;0;0;0;0;0;0" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+              <circle cx="42.601" cy="42.663" r="5" fill-opacity="0" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="0;0;1;0;0;0;0;0" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+              <circle cx="27" cy="49.125" r="5" fill-opacity="0" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="0;0;0;1;0;0;0;0" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+              <circle cx="11.399" cy="42.663" r="5" fill-opacity="0" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="0;0;0;0;1;0;0;0" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+              <circle cx="4.938" cy="27.063" r="5" fill-opacity="0" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="0;0;0;0;0;1;0;0" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+              <circle cx="11.399" cy="11.462" r="5" fill-opacity="0" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="0;0;0;0;0;0;1;0" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+              <circle cx="27" cy="5" r="5" fill-opacity="0" fill="#fff">
+                  <animate attributeName="fill-opacity"
+                       begin="0s" dur="1.3s"
+                       values="0;0;0;0;0;0;0;1" calcMode="linear"
+                       repeatCount="indefinite" />
+              </circle>
+          </g>
+      </g>
+  </svg>
+);
+
+export const TailSpin = ({ width = 58, fill = 'red' }) => (
+  <svg width={width} height={width} viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+          <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
+              <stop stopColor="#fff" stopOpacity="0" offset="0%"/>
+              <stop stopColor="#fff" stopOpacity=".631" offset="63.146%"/>
+              <stop stopColor="#fff" offset="100%"/>
+          </linearGradient>
+      </defs>
+      <g fill="none" fillRule="evenodd">
+          <g transform="translate(1 1)">
+              <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" strokeWidth="2">
+                  <animateTransform
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 18 18"
+                      to="360 18 18"
+                      dur="0.9s"
+                      repeatCount="indefinite" />
+              </path>
+              <circle fill='#fff' cx="36" cy="18" r="1">
+                  <animateTransform
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 18 18"
+                      to="360 18 18"
+                      dur="0.9s"
+                      repeatCount="indefinite" />
+              </circle>
+          </g>
+      </g>
+  </svg>
+);
+
+export const ThreeDots = ({ width = 70, fill = '#fff'}) => (
+  <svg width={width} height={width * 0.25} fill={fill} viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="15" cy="15" r="15">
+          <animate attributeName="r" from="15" to="15"
+                   begin="0s" dur="0.8s"
+                   values="15;9;15" calcMode="linear"
+                   repeatCount="indefinite" />
+          <animate attributeName="fill-opacity" from="1" to="1"
+                   begin="0s" dur="0.8s"
+                   values="1;.5;1" calcMode="linear"
+                   repeatCount="indefinite" />
+      </circle>
+      <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+          <animate attributeName="r" from="9" to="9"
+                   begin="0s" dur="0.8s"
+                   values="9;15;9" calcMode="linear"
+                   repeatCount="indefinite" />
+          <animate attributeName="fill-opacity" from="0.5" to="0.5"
+                   begin="0s" dur="0.8s"
+                   values=".5;1;.5" calcMode="linear"
+                   repeatCount="indefinite" />
+      </circle>
+      <circle cx="105" cy="15" r="15">
+          <animate attributeName="r" from="15" to="15"
+                   begin="0s" dur="0.8s"
+                   values="15;9;15" calcMode="linear"
+                   repeatCount="indefinite" />
+          <animate attributeName="fill-opacity" from="1" to="1"
+                   begin="0s" dur="0.8s"
+                   values="1;.5;1" calcMode="linear"
+                   repeatCount="indefinite" />
+      </circle>
   </svg>
 );
