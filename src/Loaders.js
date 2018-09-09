@@ -217,3 +217,82 @@ export const Grid = ({ width = 105, height = 105, fill = '#fff' }) => (
       </circle>
   </svg>
 );
+
+export const Hearts = ({ width = 140, height = 64, fill = '#fff', props }) => (
+  <svg width={width} height={height} fill={fill} viewBox="0 0 140 64" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30.262 57.02L7.195 40.723c-5.84-3.976-7.56-12.06-3.842-18.063 3.715-6 11.467-7.65 17.306-3.68l4.52 3.76 2.6-5.274c3.717-6.002 11.47-7.65 17.305-3.68 5.84 3.97 7.56 12.054 3.842 18.062L34.49 56.118c-.897 1.512-2.793 1.915-4.228.9z" fill-opacity=".5">
+          <animate attributeName="fill-opacity"
+               begin="0s" dur="1.4s"
+               values="0.5;1;0.5"
+               calcMode="linear"
+               repeatCount="indefinite" />
+      </path>
+      <path d="M105.512 56.12l-14.44-24.272c-3.716-6.008-1.996-14.093 3.843-18.062 5.835-3.97 13.588-2.322 17.306 3.68l2.6 5.274 4.52-3.76c5.84-3.97 13.592-2.32 17.307 3.68 3.718 6.003 1.998 14.088-3.842 18.064L109.74 57.02c-1.434 1.014-3.33.61-4.228-.9z" fill-opacity=".5">
+          <animate attributeName="fill-opacity"
+               begin="0.7s" dur="1.4s"
+               values="0.5;1;0.5"
+               calcMode="linear"
+               repeatCount="indefinite" />
+      </path>
+      <path d="M67.408 57.834l-23.01-24.98c-5.864-6.15-5.864-16.108 0-22.248 5.86-6.14 15.37-6.14 21.234 0L70 16.168l4.368-5.562c5.863-6.14 15.375-6.14 21.235 0 5.863 6.14 5.863 16.098 0 22.247l-23.007 24.98c-1.43 1.556-3.757 1.556-5.188 0z" />
+  </svg>
+);
+
+// FIXME
+export const Oval = ({ width = 68, height = 68, fill = '#fff' }) => (
+  <svg width={width} height={height} stroke={fill} viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd">
+          <g transform="translate(1 1)" stroke-width="2">
+              <circle stroke-opacity=".5" cx="18" cy="18" r="18"/>
+              <path d="M36 18c0-9.94-8.06-18-18-18">
+                  <animateTransform
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 18 18"
+                      to="360 18 18"
+                      dur="1.2s"
+                      repeatCount="indefinite"/>
+              </path>
+          </g>
+      </g>
+  </svg>
+);
+
+export const Puff = ({ width = 84, height = 84, fill = '#fff' }) => (
+  <svg width={width} height={height} stroke={fill} viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd" stroke-width="2">
+          <circle cx="22" cy="22" r="1">
+              <animate attributeName="r"
+                  begin="0s" dur="1.8s"
+                  values="1; 20"
+                  calcMode="spline"
+                  keyTimes="0; 1"
+                  keySplines="0.165, 0.84, 0.44, 1"
+                  repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                  begin="0s" dur="1.8s"
+                  values="1; 0"
+                  calcMode="spline"
+                  keyTimes="0; 1"
+                  keySplines="0.3, 0.61, 0.355, 1"
+                  repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="1">
+              <animate attributeName="r"
+                  begin="-0.9s" dur="1.8s"
+                  values="1; 20"
+                  calcMode="spline"
+                  keyTimes="0; 1"
+                  keySplines="0.165, 0.84, 0.44, 1"
+                  repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                  begin="-0.9s" dur="1.8s"
+                  values="1; 0"
+                  calcMode="spline"
+                  keyTimes="0; 1"
+                  keySplines="0.3, 0.61, 0.355, 1"
+                  repeatCount="indefinite" />
+          </circle>
+      </g>
+  </svg>
+);

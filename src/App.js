@@ -8,7 +8,10 @@ import {
   BallTriangle,
   Bars,
   Circles,
-  Grid
+  Grid,
+  Hearts,
+  Oval,
+  Puff
 } from './Loaders';
 
 class App extends Component {
@@ -25,7 +28,10 @@ class App extends Component {
         <li><Bars /></li>
         <li><Circles /></li>
         <li><Grid /></li>
-        { [...new Array(7)].map(e => <li>loader</li>) }
+        <li><Hearts /></li>
+        <li><Oval /></li>
+        <li><Puff /></li>
+        { [...new Array(4)].map(e => <li>loader</li>) }
         </ul>
       </div>
     );
