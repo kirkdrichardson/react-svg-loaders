@@ -134,6 +134,7 @@ export const Bars = ({ width = 135, height = 140, fill = '#fff' }) => (
   </svg>
 );
 
+
 export const Circles = ({ width = 135, height = 135, fill = '#fff' }) => (
   <svg width={135} height={135} viewBox="0 0 135 135" xmlns="http://www.w3.org/2000/svg" fill={fill}>
       <path d="M67.447 58c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10zm9.448 9.447c0 5.523 4.477 10 10 10 5.522 0 10-4.477 10-10s-4.478-10-10-10c-5.523 0-10 4.477-10 10zm-9.448 9.448c-5.523 0-10 4.477-10 10 0 5.522 4.477 10 10 10s10-4.478 10-10c0-5.523-4.477-10-10-10zM58 67.447c0-5.523-4.477-10-10-10s-10 4.477-10 10 4.477 10 10 10 10-4.477 10-10z">
@@ -154,5 +155,65 @@ export const Circles = ({ width = 135, height = 135, fill = '#fff' }) => (
               dur="8s"
               repeatCount="indefinite"/>
       </path>
+  </svg>
+);
+
+
+export const Grid = ({ width = 105, height = 105, fill = '#fff' }) => (
+  <svg width={105} height={105} viewBox="0 0 105 105" xmlns="http://www.w3.org/2000/svg" fill={fill}>
+      <circle cx="12.5" cy="12.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="0s" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".5">
+          <animate attributeName="fill-opacity"
+           begin="100ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="52.5" cy="12.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="300ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="52.5" cy="52.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="600ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="92.5" cy="12.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="800ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="92.5" cy="52.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="400ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="12.5" cy="92.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="700ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="52.5" cy="92.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="500ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
+      <circle cx="92.5" cy="92.5" r="12.5">
+          <animate attributeName="fill-opacity"
+           begin="200ms" dur="1s"
+           values="1;.2;1" calcMode="linear"
+           repeatCount="indefinite" />
+      </circle>
   </svg>
 );
